@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anysearch2"
+version = "1.0.0"
+description = "多源检索结果融合（Reciprocal Rank Fusion），零依赖"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["search", "rrf", "rank-fusion", "hybrid-search", "retrieval"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Text Processing :: Indexing",
+]
+dependencies = []
+
+[project.scripts]
+anysearch2 = "anysearch.cli:main"
+
+[tool.setuptools]
+packages = ["anysearch"]

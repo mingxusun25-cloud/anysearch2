@@ -1,0 +1,70 @@
+{
+  "documents": [
+    {
+      "doc_id": "rrf-paper",
+      "title": "Reciprocal Rank Fusion Outperforms Condorcet",
+      "url": "https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf",
+      "tags": [
+        "rrf",
+        "fusion",
+        "ranking"
+      ],
+      "text": "Cormack 等人提出 Reciprocal Rank Fusion，用排名倒数之和融合多个检索系统的结果，在 TREC 评测上稳定优于 Condorcet 融合，且无需调参。"
+    },
+    {
+      "doc_id": "bm25",
+      "title": "BM25 与词频饱和",
+      "url": "https://en.wikipedia.org/wiki/Okapi_BM25",
+      "tags": [
+        "bm25",
+        "tf-idf",
+        "lexical"
+      ],
+      "text": "BM25 是经典的词法检索打分函数，通过饱和函数抑制高频词项的影响，是全文检索的默认基线。"
+    },
+    {
+      "doc_id": "hybrid-search",
+      "title": "混合检索：词法 + 向量",
+      "url": "https://example.com/hybrid-search",
+      "tags": [
+        "hybrid",
+        "vector",
+        "ranking"
+      ],
+      "text": "生产环境常用混合检索：词法检索负责精确匹配与稀有词，向量检索负责语义泛化，两者结果再通过 RRF 或加权归一化融合。"
+    },
+    {
+      "doc_id": "vector-db",
+      "title": "向量数据库入门",
+      "url": "https://example.com/vector-db",
+      "tags": [
+        "vector",
+        "ann",
+        "hnsw"
+      ],
+      "text": "向量数据库使用 HNSW、IVF 等近似最近邻索引，在召回率与延迟之间做权衡。"
+    },
+    {
+      "doc_id": "tokenization",
+      "title": "中文分词对检索召回的影响",
+      "url": "https://example.com/tokenization",
+      "tags": [
+        "tokenization",
+        "chinese",
+        "recall"
+      ],
+      "text": "中文检索里分词策略直接决定倒排索引的粒度：字粒度召回高但噪声大，词粒度精确但容易漏召回。"
+    },
+    {
+      "doc_id": "eval-metrics",
+      "title": "检索评测指标：nDCG、MRR、Recall@k",
+      "url": "https://example.com/eval-metrics",
+      "tags": [
+        "evaluation",
+        "ndcg",
+        "mrr"
+      ],
+      "text": "融合效果需要离线评测：nDCG 关注排序质量，MRR 关注首个相关结果的位置，Recall@k 关注召回上限。"
+    }
+  ]
+}
